@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Jekyll v4.1.1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/checkout/">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+
+    <script src="../script/bootstrap.bundle.min.js"></script>
+    <script src="../script/function.js"></script>
+    
+    <!-- Custom styles for this template -->
+    <link href="../style/recipes-style.css" rel="stylesheet" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="../style/bootstrap.min.css" rel="stylesheet" />
+
+    <title>Platejoy - Meal Planning Recipes</title>
+</head>
+
+<body class="bg-light">
+
+    <div id="navbar-content"></div>
+
+    <div class="container">
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="../content/platejoy-logo2.png" alt="" height="36" width="78">
+            <h2>Add a recipe</h2>
+            <p class="lead">
+                Platejoy is your very own personal recipe organiser. Save your favourite recipes from websites, magazines, recipe books or simply those from your head, all in one place, accessible on all of your devices, anytime. Enjoy!
+            </p>
+        </div>
+
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip01">Recipe</label>
+                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Add recipe" required>
+                    <div class="invalid-tooltip">
+                        Please provide the recipe's name.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip02">Cuisine</label>
+                    <select class="custom-select" id="validationTooltip02" required>
+                        <option selected disabled value="">Select</option>
+                        <option>American</option>
+                        <option>Argentinean</option>
+                        <option>Brazilian</option>
+                        <option>British</option>
+                        <option>Chinese</option>
+                        <option>French</option>
+                        <option>German</option>
+                        <option>Italian</option>
+                        <option>Indian</option>
+                        <option>Japanese</option>
+                        <option>Korean</option>
+                        <option>Middle Eastern</option>
+                        <option>Swedish</option>
+                        <option>Swiss</option>
+                        <option>Polish</option>
+                        <option>Turkish</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid option.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="exampleFormControlTextarea1">Ingredients</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Add ingredients" required></textarea>
+                    <div class="invalid-tooltip">
+                        Please provide the list of ingredients.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-md-12 mb-3">
+                    <label for="exampleFormControlTextarea1">How to make</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Add instructions" required></textarea>
+                    <div class="invalid-tooltip">
+                        Please provide the preparation method.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip03">Cooks in</label>
+                    <input type="number" class="form-control" id="validationTooltip03" min="1" step="1" placeholder="123 minutes" required>
+                    <div class="invalid-tooltip">
+                        Please provide the cooking time.
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationTooltip04">Difficulty level</label>
+                    <select class="custom-select" id="validationTooltip04" required>
+                        <option selected disabled value="">Select</option>
+                        <option>Easy</option>
+                        <option>Moderate</option>
+                        <option>Hard</option>
+                    </select>
+                    <div class="invalid-tooltip">
+                        Please select a valid option.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-info" id="recipes" type="submit" onclick="listRecipes();">Submit recipe</button>
+        </form>
+    </div>
+    <div id="footer-content">
+    </div>
+</body>
+</html>
